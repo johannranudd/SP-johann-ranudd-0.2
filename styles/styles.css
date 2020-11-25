@@ -304,12 +304,15 @@ nav > div {
 .button-section a {
   height: 70px;
   width: 70px;
-  border: 1px solid grey;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 2.7rem;
+}
+
+.button-section a:hover {
+  font-size: 3rem;
 }
 
 .button-section a:nth-child(1){
@@ -332,6 +335,7 @@ nav > div {
 /* !media */
 @media (min-width: 768px) {
   .button-section {
+    width: 500px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
