@@ -264,7 +264,7 @@ nav > div {
 
 .hidden-section {
   height: 0;
-  width: 70%;
+  width: 80%;
   margin: auto;
   transform: translateY(-1000px);
   opacity: 0;
@@ -272,10 +272,67 @@ nav > div {
 }
 
 .show-section {
-  height: 450px;
+  height: 620px;
   transform: translateY(0px);
   opacity: 1;
   padding: 20px 0;
+  max-width: 670px;
+}
+/* mediaqueries to make the entire section 
+of the page below move relative to the drop down section */
+@media (min-width: 320px){
+  .show-section{
+    height: 550px;
+  }
+}
+
+@media (min-width: 375px){
+  .show-section{
+    height: 500px;
+  }
+}
+@media (min-width: 425px){
+  .show-section{
+    height: 450px;
+  }
+}
+@media (min-width: 525px){
+  .show-section{
+    height: 390px;
+  }
+}
+@media (min-width: 625px){
+  .show-section{
+    height: 340px;
+  }
+}
+@media (min-width: 725px){
+  .show-section{
+    height: 290px;
+  }
+}
+@media (min-width: 768px){
+  .hidden-section {
+    width: 60%;
+  }
+  .show-section{
+    height: 300px;
+  }
+}
+@media (min-width: 870px){
+  .show-section{
+    height: 260px;
+  }
+}
+@media (min-width: 960px){
+  .show-section{
+    height: 240px;
+  }
+}
+@media (min-width: 1050px){
+  .show-section{
+    height: 220px;
+  }
 }
 
 .hidden-section h2 {
@@ -289,6 +346,7 @@ nav > div {
   padding-top: 15px;
 }
 
+/* !main-section-index */
 /* !button-section */
 
 .button-section {
@@ -340,3 +398,6 @@ nav > div {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* !index-cards-wrapper */
+
