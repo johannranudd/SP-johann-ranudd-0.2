@@ -75,12 +75,19 @@ button:hover {
   opacity: 0.6;
 }
 
+/* !width container ajustments */
 /* main */
 main h1 {
   text-align: center;
   padding: 20px;
   font-size: var(--header-font-size);
   color: var(--blue);
+}
+
+.ninty-percent-six-hundred {
+  width: 90%;
+  margin: auto;
+  max-width: 600px;
 }
 
 /* !header */
@@ -130,8 +137,13 @@ nav > div {
   left: -1000px;
   width: 40%;
   height: 520px;
-  background: rgba(204, 204, 204, 0.596);
+  background: rgba(204, 204, 204, 0.85);
   padding-top: 50px;
+}
+
+/* menu height for other pages than home page */
+.menu-other-pages-height {
+  height: 370px;
 }
 
 .menu a {
@@ -289,52 +301,52 @@ nav > div {
 }
 /* mediaqueries to make the entire section 
 of the page below move relative to the drop down section */
-@media (min-width: 320px){
-  .show-section{
+@media (min-width: 320px) {
+  .show-section {
     height: 650px;
   }
 }
 
-@media (min-width: 375px){
-  .show-section{
+@media (min-width: 375px) {
+  .show-section {
     height: 580px;
   }
 }
-@media (min-width: 425px){
-  .show-section{
+@media (min-width: 425px) {
+  .show-section {
     height: 510px;
   }
 }
-@media (min-width: 525px){
-  .show-section{
+@media (min-width: 525px) {
+  .show-section {
     height: 420px;
   }
 }
-@media (min-width: 625px){
-  .show-section{
+@media (min-width: 625px) {
+  .show-section {
     height: 370px;
   }
 }
-@media (min-width: 725px){
-  .show-section{
+@media (min-width: 725px) {
+  .show-section {
     height: 320px;
   }
 }
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .hidden-section {
     width: 60%;
   }
-  .show-section{
+  .show-section {
     height: 370px;
   }
 }
-@media (min-width: 870px){
-  .show-section{
+@media (min-width: 870px) {
+  .show-section {
     height: 320px;
   }
 }
-@media (min-width: 1050px){
-  .show-section{
+@media (min-width: 1050px) {
+  .show-section {
     height: 280px;
   }
 }
@@ -378,21 +390,21 @@ of the page below move relative to the drop down section */
   font-size: 3rem;
 }
 
-.button-section a:nth-child(1){
+.button-section a:nth-child(1) {
   border: 2px solid var(--pink);
-  color: var(--pink)
+  color: var(--pink);
 }
-.button-section a:nth-child(2){
+.button-section a:nth-child(2) {
   border: 2px solid var(--blue);
-  color: var(--blue)
+  color: var(--blue);
 }
-.button-section a:nth-child(3){
+.button-section a:nth-child(3) {
   border: 2px solid var(--red);
-  color: var(--red)
+  color: var(--red);
 }
-.button-section a:nth-child(4){
+.button-section a:nth-child(4) {
   border: 2px solid var(--green);
-  color: var(--green)
+  color: var(--green);
 }
 
 /* !media */
@@ -419,7 +431,7 @@ of the page below move relative to the drop down section */
   margin: auto;
 }
 
-figure{
+figure {
   width: 95%;
   max-width: 350px;
   margin: auto;
@@ -443,7 +455,7 @@ figcaption a {
 }
 
 figcaption a:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 figcaption h2 {
@@ -508,7 +520,7 @@ footer a {
   color: var(--blue);
 }
 footer a:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 footer label {
@@ -626,3 +638,63 @@ footer form input[type="submit"]:hover {
     margin-right: 0px;
   }
 }
+
+/* !shop */
+
+.shop-image-section {
+  background: url("../img/exhibition-1920.jpg") no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.shop-image-section div {
+  background: rgba(255, 255, 255, 0.664);
+  text-align: center;
+}
+
+.shop-image-section div p {
+  font-size: 2rem;
+}
+
+.shop-section-1 h2 {
+  padding: 20px 0 10px 0;
+}
+
+/* cards section */
+
+.shop-cards-section figure {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.shop-cards-section figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0;
+}
+
+/* !media */
+
+@media (min-width: 768px) {
+  .shop-cards-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin: auto;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 1000px){
+  .shop-cards-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
