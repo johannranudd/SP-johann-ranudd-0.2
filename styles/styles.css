@@ -290,18 +290,18 @@ nav > div {
 of the page below move relative to the drop down section */
 @media (min-width: 320px){
   .show-section{
-    height: 550px;
+    height: 540px;
   }
 }
 
 @media (min-width: 375px){
   .show-section{
-    height: 500px;
+    height: 480px;
   }
 }
 @media (min-width: 425px){
   .show-section{
-    height: 450px;
+    height: 430px;
   }
 }
 @media (min-width: 525px){
@@ -365,6 +365,7 @@ of the page below move relative to the drop down section */
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
+  padding-top: 20px;
 }
 
 .button-section a {
@@ -402,9 +403,10 @@ of the page below move relative to the drop down section */
 @media (min-width: 768px) {
   .button-section {
     width: 500px;
-    height: 150px;
+    height: 170px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding-top: 0px;
   }
 }
 
@@ -464,6 +466,7 @@ figcaption h2 {
     justify-content: center;
     max-width: 700px;
     padding: 0px;
+    margin-bottom: 100px;
   }
 }
 
@@ -482,5 +485,142 @@ figcaption h2 {
 @media (min-width: 1200px) {
   figcaption h2 {
     font-size: 1.5rem;
+  }
+}
+
+
+
+/* !footer */
+
+/* core */
+footer {
+  margin-top: 50px;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 1.4rem;
+  color: var(--bg-black);
+}
+
+footer a {
+  color: var(--blue);
+}
+
+footer label {
+  font-size: 1.4rem;
+}
+/* main components */
+
+footer .container {
+  width: 70%;
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .container > div,
+form {
+  padding: 20px;
+}
+
+.opening-hours-footer {
+  max-width: 250px;
+  margin-left: 10px;
+}
+/* more spesiffic to each div */
+
+.social > div {
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px 0;
+}
+.social a {
+  font-size: 2rem;
+  width: 20px;
+  height: 20px;
+}
+.social a:hover {
+  font-size: 2.3rem;
+}
+footer form input[type="text"] {
+  height: 30px;
+  padding: 0 15px;
+  margin: 10px 0;
+}
+
+footer form input[type="submit"] {
+  height: 30px;
+  padding: 0 20px;
+  display: block;
+  background: var(--blue);
+  border: 1.5px solid var(--bg-black);
+  border-radius: 20px;
+  cursor: pointer;
+}
+footer form input[type="submit"]:hover {
+  opacity: 0.7;
+}
+
+/* back to top */
+
+.back-to-top {
+  padding: 10px;
+}
+.back-to-top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back-to-top .fa-angle-up {
+  font-size: 2rem;
+  margin-left: 5px;
+}
+
+/* !media */
+
+@media (min-width: 668px) {
+  footer .container {
+    width: 72%;
+    max-width: 72%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: start;
+  }
+  .contact-footer {
+    margin-right: 20px;
+  }
+  .opening-hours-footer {
+    margin-left: 0px;
+  }
+  .social {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 760px) {
+  footer {
+    background: #ccc;
+  }
+}
+
+@media (min-width: 900px) {
+  footer .container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+  .social {
+    margin-right: 0px;
   }
 }
