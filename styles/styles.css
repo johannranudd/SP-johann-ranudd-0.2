@@ -39,6 +39,11 @@ html {
 body {
   background: var(--bg-color);
 }
+main {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
 ul {
   list-style-type: none;
 }
@@ -55,6 +60,9 @@ a {
 p {
   font-family: var(--p-font);
   font-size: var(--p-font-size);
+}
+img {
+  max-width: 100%;
 }
 button {
   cursor: pointer;
@@ -298,12 +306,12 @@ of the page below move relative to the drop down section */
 }
 @media (min-width: 525px){
   .show-section{
-    height: 390px;
+    height: 370px;
   }
 }
 @media (min-width: 625px){
   .show-section{
-    height: 340px;
+    height: 320px;
   }
 }
 @media (min-width: 725px){
@@ -316,22 +324,22 @@ of the page below move relative to the drop down section */
     width: 60%;
   }
   .show-section{
-    height: 300px;
+    height: 320px;
   }
 }
 @media (min-width: 870px){
   .show-section{
-    height: 260px;
+    height: 280px;
   }
 }
 @media (min-width: 960px){
   .show-section{
-    height: 240px;
+    height: 260px;
   }
 }
 @media (min-width: 1050px){
   .show-section{
-    height: 220px;
+    height: 240px;
   }
 }
 
@@ -394,6 +402,7 @@ of the page below move relative to the drop down section */
 @media (min-width: 768px) {
   .button-section {
     width: 500px;
+    height: 150px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
@@ -401,3 +410,77 @@ of the page below move relative to the drop down section */
 
 /* !index-cards-wrapper */
 
+.index-cards-wrapper {
+  background: var(--bg-black);
+  padding: 5px;
+}
+/* todo add to the core styles */
+/* to create the black background */
+.ninty-five-percent-wrapper {
+  width: 95%;
+  margin: auto;
+}
+
+figure{
+  width: 95%;
+  max-width: 350px;
+  margin: auto;
+  background: var(--bg-color);
+  margin-top: 20px;
+  box-shadow: 0px 10px 13px -7px #000000;
+}
+
+figcaption {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 15px 10px 15px;
+}
+
+figcaption a {
+  color: var(--blue);
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
+
+figcaption h2 {
+  font-size: 1.5rem;
+}
+/* todo above */
+
+/* !media */
+
+@media (min-width: 430px) {
+  .ninty-five-percent-wrapper {
+    background: var(--bg-color);
+  }
+}
+
+@media (min-width: 768px) {
+  .index-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    max-width: 700px;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .index-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    max-width: 1300px;
+  }
+  figcaption h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  figcaption h2 {
+    font-size: 1.5rem;
+  }
+}
