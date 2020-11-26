@@ -75,6 +75,37 @@ button:hover {
   opacity: 0.6;
 }
 
+figure {
+  width: 95%;
+  max-width: 350px;
+  margin: auto;
+  background: var(--bg-color);
+  margin-top: 20px;
+  box-shadow: 0px 10px 13px -7px #000000;
+}
+
+figcaption {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 15px 10px 15px;
+}
+
+figcaption a {
+  color: var(--blue);
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
+
+figcaption a:hover {
+  opacity: 0.6;
+}
+
+figcaption h2 {
+  font-size: 1.5rem;
+}
+
 /* !width container ajustments */
 /* main */
 main h1 {
@@ -88,6 +119,12 @@ main h1 {
   width: 90%;
   margin: auto;
   max-width: 600px;
+}
+
+/* to create the black background */
+.ninty-five-percent-wrapper {
+  width: 95%;
+  margin: auto;
 }
 
 /* !header */
@@ -424,44 +461,7 @@ of the page below move relative to the drop down section */
   background: var(--bg-black);
   padding: 5px;
 }
-/* todo add to the core styles */
-/* to create the black background */
-.ninty-five-percent-wrapper {
-  width: 95%;
-  margin: auto;
-}
 
-figure {
-  width: 95%;
-  max-width: 350px;
-  margin: auto;
-  background: var(--bg-color);
-  margin-top: 20px;
-  box-shadow: 0px 10px 13px -7px #000000;
-}
-
-figcaption {
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 0 15px 10px 15px;
-}
-
-figcaption a {
-  color: var(--blue);
-  font-size: 1.4rem;
-  white-space: nowrap;
-}
-
-figcaption a:hover {
-  opacity: 0.6;
-}
-
-figcaption h2 {
-  font-size: 1.5rem;
-}
-/* todo above */
 
 /* !media */
 
@@ -659,7 +659,11 @@ footer form input[type="submit"]:hover {
 }
 
 .shop-section-1 h2 {
-  padding: 20px 0 10px 0;
+  padding: 20px 0 0px 0;
+}
+
+.shop-section-1 p {
+  padding: 10px 0;
 }
 
 /* cards section */
@@ -685,7 +689,7 @@ footer form input[type="submit"]:hover {
     grid-template-columns: repeat(2, 1fr);
     max-width: 637px;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 45px;
   }
   .shop-cards-section figure {
     max-width: 280px;
@@ -708,4 +712,82 @@ footer form input[type="submit"]:hover {
     font-size: 1.5rem;
   }
 }
+
+
+/* !explore page */
+
+.explore-image-section {
+  background: url('../img/inside-museum-resized.jpg')
+  no-repeat center center/cover;
+  height: 300px;
+}
+
+
+
+/* todo add to core styles */
+
+article {
+  width: 90%;
+  max-width: 750px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+article img {
+  max-width: 140px;
+  float: right;
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  article img {
+    max-width: 160px;
+  }
+}
+
+/* todo ends here */
+
+.black-bg {
+  background: var(--bg-black);
+  width: 100%;
+  max-width: 800px;
+  padding: 20px 20px;
+  color: white;
+}
+
+/* todo sef */
+
+.exhibition-header {
+  padding-top: 0;
+}
+
+/* !media */
+
+@media (min-width: 470px) {
+  .black-bg {
+    padding: 20px 30px;
+  }
+  .explore-article-7 {
+    margin-bottom: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .explore-article-6 {
+    padding: 40px 0 60px 0;
+  }
+  .black-bg {
+    padding: 20px 38px;
+  }
+}
+
+@media (min-width: 850px) {
+  .explore-article-6 {
+    padding: 40px 0 80px 0;
+  }
+  .black-bg {
+    padding: 20px 25px;
+  }
+}
+
 
