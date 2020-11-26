@@ -836,3 +836,36 @@ article span {
     width: 100%;
   }
 }
+
+/* !program page */
+
+.program-image-section {
+  background: url('../img/science-img1.jpg')
+  no-repeat center center/cover;
+  height: 300px;
+}
+
+.program-article div{
+  display: flex;
+  flex-direction: column;
+}
+
+.program-black-bg {
+  background: var(--bg-black);
+  color: white;
+  width: 95%;
+  padding: 20px;
+  max-width: 780px;
+}
+
+.program-article img {
+  max-width: 220px;
+}
+
+/* !media */
+@media (min-width: 768px) {
+  .program-article div{
+    display: flex;
+    flex-direction: row;
+  }
+}
