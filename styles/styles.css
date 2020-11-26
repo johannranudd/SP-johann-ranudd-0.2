@@ -868,3 +868,15 @@ article span {
     flex-direction: row;
   }
 }
+
+/* !contact page */
+
+.contact-image-section {
+  background: url('../img/question-192030.jpeg')
+  no-repeat center center/cover;
+  height: 300px;
+}
+
+.contact-section-1 {
+  
+}
