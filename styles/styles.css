@@ -853,7 +853,6 @@ article span {
 .program-black-bg {
   background: var(--bg-black);
   color: white;
-  width: 95%;
   padding: 20px;
   max-width: 780px;
 }
