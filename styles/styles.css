@@ -735,13 +735,13 @@ footer form input[type="submit"]:hover {
   justify-content: flex-end;
 }
 
+.shop-section-1 {
+  max-width: 350px;
+}
+
 .shop-image-section div {
   background: rgba(255, 255, 255, 0.664);
   text-align: center;
-}
-
-.shop-image-section div p {
-  font-size: 2rem;
 }
 
 .shop-section-1 h2 {
@@ -760,34 +760,34 @@ footer form input[type="submit"]:hover {
   height: 200px;
 }
 .shop-image-card-2 {
-  background: url('../img/rubics-cube-600.jpeg')
+  background: url('../img/chemistry-600.jpg')
   no-repeat center center/cover;
   height: 200px;
 }
 .shop-image-card-3 {
-  background: url('../img/rubics-cube-600.jpeg')
+  background: url('../img/lego.jpg')
   no-repeat center center/cover;
   height: 200px;
 }
 .shop-image-card-4 {
-  background: url('../img/rubics-cube-600.jpeg')
+  background: url('../img/puzzle-600.jpeg')
   no-repeat center center/cover;
   height: 200px;
 }
 .shop-image-card-5 {
-  background: url('../img/rubics-cube-600.jpeg')
+  background: url('../img/evolution-shirt-600.jpg')
   no-repeat center center/cover;
   height: 200px;
 }
 .shop-image-card-6 {
-  background: url('../img/rubics-cube-600.jpeg')
+  background: url('../img/gift-card-600.jpeg')
   no-repeat center center/cover;
   height: 200px;
 }
 
 .shop-cards-section figure {
   margin-top: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
 }
 
 .shop-cards-section figcaption {
@@ -810,7 +810,9 @@ footer form input[type="submit"]:hover {
   }
   .shop-cards-section figure {
     max-width: 280px;
-    margin-top: 7px;
+  }
+  .shop-section-1 {
+    max-width: 600px;
   }
 }
 
@@ -818,7 +820,7 @@ footer form input[type="submit"]:hover {
   .shop-cards-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
   }
   .shop-cards-section figure {
@@ -942,27 +944,54 @@ footer form input[type="submit"]:hover {
   height: 300px;
 }
 
-.program-article div{
+.program-article {
   display: flex;
   flex-direction: column;
+  max-width: 600px;
 }
 
-.program-black-bg {
-  background: var(--bg-black);
-  color: white;
-  padding: 20px;
-  max-width: 780px;
+.program-image-1 {
+  background: url('../img/teaching-science-1200.jpg')
+  no-repeat center center/cover;
+  height: 250px;
 }
-
-.program-article img {
-  max-width: 220px;
+.program-image-2 {
+  background: url('../img/t-rex-resized.jpg')
+  no-repeat 10% 10%/cover;
+  height: 250px;
+}
+.program-image-3 {
+  background: url('../img/lab-img.jpeg')
+  no-repeat center center/cover;
+  height: 250px;
 }
 
 /* !media */
-@media (min-width: 768px) {
-  .program-article div{
+@media (min-width: 500px) {
+  .program-image-1,
+  .program-image-2,
+  .program-image-3 {
+    height: 300px;
+  }
+}
+
+@media (min-width: 770px) {
+  .program-articles {
     display: flex;
-    flex-direction: row;
+    margin: auto;
+    width: 90%;
+  }
+  .program-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 20px;
+    max-width: 400px;
+  }
+  .program-image-1,
+  .program-image-2,
+  .program-image-3 {
+    height: 200px;
   }
 }
 
