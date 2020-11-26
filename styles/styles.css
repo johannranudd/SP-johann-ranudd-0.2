@@ -738,7 +738,9 @@ article img {
   float: right;
   margin-top: 5px;
 }
-
+article span {
+  font-weight: bold;
+}
 @media (min-width: 768px) {
   article img {
     max-width: 160px;
@@ -799,6 +801,38 @@ article img {
   height: 300px;
 }
 
+.hours-table {
+  border: 2px solid var(--bg-black);
+  width: 95%;
+}
+.hours-table h2 {
+  text-align: center;
+}
+
+.hours-table table {
+  width: 100%;
+  font-family: var(--p-font);
+}
+
+.hours-table table tr{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+  width: 90%;
+  margin: auto;
+  max-width: 300px;
+}
+
 .grey-bg {
   background: #ccc;
+  width: 95%;
+  padding: 15px 10px;
+}
+
+/* !media */
+@media (min-width: 768px){
+  .grey-bg {
+    padding: 15px 20px;
+    width: 100%;
+  }
 }
