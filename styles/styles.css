@@ -673,7 +673,7 @@ footer form input[type="submit"]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 50px;
   padding: 0;
 }
 
@@ -683,9 +683,13 @@ footer form input[type="submit"]:hover {
   .shop-cards-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 800px;
+    max-width: 637px;
     margin: auto;
     padding-top: 20px;
+  }
+  .shop-cards-section figure {
+    max-width: 280px;
+    margin-top: 7px;
   }
 }
 
@@ -693,8 +697,15 @@ footer form input[type="submit"]:hover {
   .shop-cards-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
+  }
+  .shop-cards-section figure {
+    max-width: 300px;
+    margin-top: 7px;
+  }
+  .shop-cards-section figcaption h2{
+    font-size: 1.5rem;
   }
 }
 
