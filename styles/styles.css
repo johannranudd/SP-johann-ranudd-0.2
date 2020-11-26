@@ -352,7 +352,7 @@ nav > div {
 }
 
 .show-section {
-  height: 720px;
+  height: 810px;
   transform: translateY(0px);
   opacity: 1;
   padding: 20px 0;
@@ -362,33 +362,54 @@ nav > div {
 of the page below move relative to the drop down section */
 @media (min-width: 320px) {
   .show-section {
-    height: 650px;
+    height: 750px;
+  }
+}
+
+@media (min-width: 350px) {
+  .show-section {
+    height: 700px;
   }
 }
 
 @media (min-width: 375px) {
   .show-section {
-    height: 580px;
+    height: 630px;
   }
 }
 @media (min-width: 425px) {
+  .show-section {
+    height: 580px;
+  }
+}
+@media (min-width: 475px) {
   .show-section {
     height: 510px;
   }
 }
 @media (min-width: 525px) {
   .show-section {
-    height: 420px;
+    height: 490px;
+  }
+}
+@media (min-width: 575px) {
+  .show-section {
+    height: 440px;
   }
 }
 @media (min-width: 625px) {
   .show-section {
-    height: 370px;
+    height: 410px;
+  }
+}
+@media (min-width: 675px) {
+  .show-section {
+    height: 390px;
   }
 }
 @media (min-width: 725px) {
   .show-section {
-    height: 320px;
+    height: 370px;
   }
 }
 @media (min-width: 768px) {
@@ -396,17 +417,27 @@ of the page below move relative to the drop down section */
     width: 60%;
   }
   .show-section {
-    height: 370px;
+    height: 420px;
   }
 }
 @media (min-width: 870px) {
   .show-section {
-    height: 320px;
+    height: 370px;
+  }
+}
+@media (min-width: 940px) {
+  .show-section {
+    height: 340px;
   }
 }
 @media (min-width: 1050px) {
   .show-section {
-    height: 280px;
+    height: 320px;
+  }
+}
+@media (min-width: 1100px) {
+  .show-section {
+    height: 300px;
   }
 }
 
