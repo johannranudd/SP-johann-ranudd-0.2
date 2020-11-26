@@ -20,7 +20,7 @@
   /* font-size */
   --header-font-size: 30px;
   --sub-header-font-size: 20px;
-  --p-font-size: 14px;
+  --p-font-size: 16px;
   /* line-height */
   --p-line-height: 2.4rem;
   /* color */
@@ -106,6 +106,27 @@ figcaption h2 {
   font-size: 1.5rem;
 }
 
+/* article */
+
+article {
+  width: 90%;
+  max-width: 750px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+article img {
+  max-width: 140px;
+  float: right;
+  margin-top: 5px;
+}
+article span {
+  font-weight: bold;
+}
+article a {
+  color: var(--blue);
+}
+
 /* !width container ajustments */
 /* main */
 main h1 {
@@ -126,6 +147,7 @@ main h1 {
   width: 95%;
   margin: auto;
 }
+
 
 /* !header */
 
@@ -723,31 +745,12 @@ footer form input[type="submit"]:hover {
 }
 
 
-
-/* todo add to core styles */
-
-article {
-  width: 90%;
-  max-width: 750px;
-  margin: auto;
-  padding: 30px 0;
-}
-
-article img {
-  max-width: 140px;
-  float: right;
-  margin-top: 5px;
-}
-article span {
-  font-weight: bold;
-}
 @media (min-width: 768px) {
   article img {
     max-width: 160px;
   }
 }
 
-/* todo ends here */
 
 .black-bg {
   background: var(--bg-black);
@@ -756,8 +759,6 @@ article span {
   padding: 20px 20px;
   color: white;
 }
-
-/* todo sef */
 
 .exhibition-header {
   padding-top: 0;
@@ -812,6 +813,7 @@ article span {
 .hours-table table {
   width: 100%;
   font-family: var(--p-font);
+  font-size: var(--p-font-size);
 }
 
 .hours-table table tr{
@@ -877,6 +879,85 @@ article span {
   height: 300px;
 }
 
+.mail-icon {
+  display: none;
+}
+
 .contact-section-1 {
-  
+  max-width: 300px;
+}
+
+.contact-section-1 div{
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.contact-section-1 p {
+  padding: 15px 0;
+}
+
+.contact-section-1 a {
+  color: var(--blue);
+}
+
+.contact-section-1 a:hover {
+  opacity: .6;
+}
+
+.contact-section-2 form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contact-section-2 form h2 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.contact-section-2 form input {
+  margin-bottom: 20px;
+  height: 30px;
+  border: 1px solid var(--bg-black);
+}
+
+.contact-section-2 form textarea {
+  margin-bottom: 10px;
+  border: 1px solid var(--bg-black);
+}
+
+.contact-section-2 form input[type="submit"] {
+  background: var(--blue);
+  border: 2px solid var(--bg-black);
+  border-radius: 50px;
+  cursor: pointer;
+}
+.contact-section-2 form input[type="submit"]:hover {
+  opacity: .6;
+}
+
+/* !media */ 
+@media (min-width: 768px) {
+  .contact-section-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    max-width: 800px;
+  }
+  .mail-icon {
+    display: block;
+    font-size: 23rem;
+    color: var(--blue);
+  }
+  .contact-section-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+    max-width: 800px;
+  }
 }
