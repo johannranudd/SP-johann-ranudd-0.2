@@ -40,7 +40,7 @@ body {
   background: var(--bg-color);
 }
 main {
-  max-width: 1300px;
+  max-width: 1500px;
   width: 100%;
   margin: auto;
 }
@@ -82,6 +82,10 @@ figure {
   background: var(--bg-color);
   margin-top: 20px;
   box-shadow: 0px 10px 13px -7px #000000;
+}
+
+figure div {
+  min-width: 200px;
 }
 
 figcaption {
@@ -515,6 +519,27 @@ of the page below move relative to the drop down section */
   padding: 5px;
 }
 
+.image-card-1 {
+  background: url('../img/science-img1.jpg')
+  no-repeat center center/cover;
+  height: 200px;
+}
+.image-card-2 {
+  background: url('../img/t-rex-resized.jpg')
+  no-repeat 10% center/cover;
+  height: 200px;
+}
+.image-card-3 {
+  background: url('../img/lab-img.jpeg')
+  no-repeat center center/cover;
+  height: 200px;
+}
+.image-card-4 {
+  background: url('../img/guy-painting-vr.jpg')
+  no-repeat center center/cover;
+  height: 200px;
+}
+
 
 /* !media */
 
@@ -530,6 +555,7 @@ of the page below move relative to the drop down section */
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     max-width: 700px;
+    grid-gap: 1.5rem;
     padding: 0px;
     margin-bottom: 100px;
   }
@@ -540,16 +566,23 @@ of the page below move relative to the drop down section */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    max-width: 1300px;
+    max-width: 1400px;
+    width: 85%;
+  }
+  .index-cards-wrapper figcaption {
+    height: 70px;
   }
   figcaption h2 {
     font-size: 1.3rem;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   figcaption h2 {
     font-size: 1.5rem;
+  }
+  .index-cards-wrapper {
+    width: 90%;
   }
 }
 
@@ -720,6 +753,37 @@ footer form input[type="submit"]:hover {
 }
 
 /* cards section */
+
+.shop-image-card-1 {
+  background: url('../img/rubics-cube-600.jpeg')
+  no-repeat center center/cover;
+  height: 200px;
+}
+.shop-image-card-2 {
+  background: url('../img/rubics-cube-600.jpeg')
+  no-repeat center center/cover;
+  height: 200px;
+}
+.shop-image-card-3 {
+  background: url('../img/rubics-cube-600.jpeg')
+  no-repeat center center/cover;
+  height: 200px;
+}
+.shop-image-card-4 {
+  background: url('../img/rubics-cube-600.jpeg')
+  no-repeat center center/cover;
+  height: 200px;
+}
+.shop-image-card-5 {
+  background: url('../img/rubics-cube-600.jpeg')
+  no-repeat center center/cover;
+  height: 200px;
+}
+.shop-image-card-6 {
+  background: url('../img/rubics-cube-600.jpeg')
+  no-repeat center center/cover;
+  height: 200px;
+}
 
 .shop-cards-section figure {
   margin-top: 20px;
