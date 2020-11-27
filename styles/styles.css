@@ -624,15 +624,11 @@ footer label {
   font-size: 1.4rem;
   font-family: var(--p-font);
 }
-
-footer form {
-  margin-left: 5px;
-}
 /* main components */
 
 footer .container {
   width: 70%;
-  max-width: 300px;
+  max-width: 190px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -641,21 +637,23 @@ footer .container {
 
 footer .container > div,
 form {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .opening-hours-footer {
   max-width: 250px;
-  margin-left: 17px;
 }
 /* more spesiffic to each div */
 
 .social > div {
   display: flex;
   justify-content: space-between;
-  max-width: 200px;
+  width: 185px;
   margin: auto;
   padding: 20px 0;
+}
+.social p {
+  text-align: center;
 }
 .social a {
   font-size: 2rem;
@@ -714,10 +712,13 @@ footer form input[type="submit"]:hover {
     margin-right: 20px;
   }
   .opening-hours-footer {
-    margin-left: 0px;
+    max-width: 210px;
   }
   .social {
     margin-right: 20px;
+  }
+  .social div {
+    width: 170px;
   }
 }
 
@@ -730,13 +731,16 @@ footer form input[type="submit"]:hover {
 @media (min-width: 900px) {
   footer .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1520px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
   }
   .social {
     margin-right: 0px;
+  }
+  .opening-hours-footer {
+    margin-left: 0px;
   }
 }
 
