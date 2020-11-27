@@ -439,11 +439,6 @@ of the page below move relative to the drop down section */
     height: 320px;
   }
 }
-@media (min-width: 1100px) {
-  .show-section {
-    height: 300px;
-  }
-}
 
 .hidden-section h2 {
   text-align: center;
