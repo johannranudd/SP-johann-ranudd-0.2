@@ -81,7 +81,7 @@ figure {
   margin: auto;
   background: var(--bg-color);
   margin-top: 20px;
-  box-shadow: 0px 10px 13px -7px #000000;
+  box-shadow: 0px 6px 13px -7px #000000;
 }
 
 figure div {
@@ -462,7 +462,7 @@ of the page below move relative to the drop down section */
 .button-section {
   width: 200px;
   margin: auto;
-  height: 200px;
+  height: 250px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -484,19 +484,26 @@ of the page below move relative to the drop down section */
   font-size: 3rem;
 }
 
-.button-section a:nth-child(1) {
+.button-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-btn a {
   border: 2px solid var(--pink);
   color: var(--pink);
 }
-.button-section a:nth-child(2) {
+.visit-btn a {
   border: 2px solid var(--blue);
   color: var(--blue);
 }
-.button-section a:nth-child(3) {
+.program-btn a {
   border: 2px solid var(--red);
   color: var(--red);
 }
-.button-section a:nth-child(4) {
+.shop-btn a {
   border: 2px solid var(--green);
   color: var(--green);
 }
@@ -653,7 +660,7 @@ form {
 footer form input[type="text"] {
   height: 30px;
   padding: 0 15px;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 footer form input[type="submit"] {
@@ -844,7 +851,7 @@ footer form input[type="submit"]:hover {
 
 @media (min-width: 768px) {
   article img {
-    max-width: 160px;
+    max-width: 180px;
   }
 }
 
@@ -963,6 +970,10 @@ footer form input[type="submit"]:hover {
   max-width: 600px;
 }
 
+.program-article p {
+  margin-bottom: 15px;
+}
+
 .program-image-1 {
   background: url('../img/teaching-science-1200.jpg')
   no-repeat center center/cover;
@@ -991,6 +1002,7 @@ footer form input[type="submit"]:hover {
 @media (min-width: 770px) {
   .program-articles {
     display: flex;
+    justify-content: center;
     margin: auto;
     width: 90%;
   }
@@ -1007,12 +1019,21 @@ footer form input[type="submit"]:hover {
     height: 200px;
   }
 }
+@media (min-width: 1500px) {
+  .program-articles {
+    width: 100%;
+  }
+  .program-article {
+    margin: 0 30px;
+  }
+}
+
 
 /* !contact page */
 
 .contact-image-section {
   background: url('../img/question-192030.jpeg')
-  no-repeat center center/cover;
+  no-repeat center 30%/cover;
   height: 300px;
 }
 
