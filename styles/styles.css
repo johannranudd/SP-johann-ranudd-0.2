@@ -290,7 +290,7 @@ nav > div {
 
 /* !image section */
 .index-image-section {
-  background: url("../img/vr-girl-resized-optimized.jpg") no-repeat center
+  background: url("../img/vr-girl-800.jpg") no-repeat center
     center/cover;
   height: 450px;
 }
@@ -526,22 +526,22 @@ of the page below move relative to the drop down section */
 }
 
 .image-card-1 {
-  background: url('../img/science-img1.jpg')
+  background: url('../img/science-600.jpg')
   no-repeat center center/cover;
   height: 200px;
 }
 .image-card-2 {
-  background: url('../img/t-rex-resized.jpg')
+  background: url('../img/t-rex-800.jpg')
   no-repeat 10% center/cover;
   height: 200px;
 }
 .image-card-3 {
-  background: url('../img/lab-img.jpeg')
+  background: url('../img/lab-img-800.jpeg')
   no-repeat center center/cover;
   height: 200px;
 }
 .image-card-4 {
-  background: url('../img/guy-painting-vr.jpg')
+  background: url('../img/guy-painting-vr-800.jpg')
   no-repeat center center/cover;
   height: 200px;
 }
@@ -742,7 +742,7 @@ footer form input[type="submit"]:hover {
 /* !shop */
 
 .shop-image-section {
-  background: url("../img/exhibition-1920.jpg") no-repeat center center/cover;
+  background: url("../img/exhibition-1920-70.jpg") no-repeat center center/cover;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -966,7 +966,7 @@ footer form input[type="submit"]:hover {
 /* !program page */
 
 .program-image-section {
-  background: url('../img/science-img1.jpg')
+  background: url('../img/pattern-1920-60.jpg')
   no-repeat center center/cover;
   height: 300px;
 }
@@ -987,12 +987,12 @@ footer form input[type="submit"]:hover {
   height: 250px;
 }
 .program-image-2 {
-  background: url('../img/t-rex-resized.jpg')
+  background: url('../img/t-rex-800.jpg')
   no-repeat 10% 10%/cover;
   height: 250px;
 }
 .program-image-3 {
-  background: url('../img/lab-img.jpeg')
+  background: url('../img/lab-img-800.jpeg')
   no-repeat center center/cover;
   height: 250px;
 }
