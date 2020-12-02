@@ -660,7 +660,7 @@ form {
 }
 footer form input[type="text"] {
   height: 30px;
-  padding: 0 15px;
+  padding: 0;
   margin: 20px 0;
 }
 
