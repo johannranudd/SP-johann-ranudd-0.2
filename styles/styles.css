@@ -737,6 +737,9 @@ footer form input[type="submit"]:hover {
   .opening-hours-footer {
     margin-left: 0px;
   }
+  footer form input[type="text"] {
+    width: 190px;
+  }
 }
 
 /* !shop */
