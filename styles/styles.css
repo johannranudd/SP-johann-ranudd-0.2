@@ -715,6 +715,9 @@ footer form input[type="submit"]:hover {
   .social div {
     width: 170px;
   }
+  footer form input[type="text"] {
+    width: 185px;
+  }
 }
 
 @media (min-width: 760px) {
@@ -736,9 +739,6 @@ footer form input[type="submit"]:hover {
   }
   .opening-hours-footer {
     margin-left: 0px;
-  }
-  footer form input[type="text"] {
-    width: 190px;
   }
 }
 
