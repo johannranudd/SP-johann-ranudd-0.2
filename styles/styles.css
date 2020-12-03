@@ -859,14 +859,6 @@ footer form input[type="submit"]:hover {
   height: 300px;
 }
 
-
-@media (min-width: 768px) {
-  article img {
-    max-width: 180px;
-  }
-}
-
-
 .black-bg {
   background: var(--bg-black);
   width: 100%;
@@ -885,17 +877,20 @@ footer form input[type="submit"]:hover {
   .black-bg {
     padding: 20px 30px;
   }
-  .explore-article-7 {
-    margin-bottom: 120px;
-  }
 }
 
 @media (min-width: 768px) {
+  article img {
+    max-width: 180px;
+  }
   .explore-article-6 {
     padding: 40px 0 60px 0;
   }
   .black-bg {
     padding: 20px 38px;
+  }
+  .explore-article-7 {
+    margin-bottom: 50px;
   }
 }
 
@@ -927,6 +922,9 @@ footer form input[type="submit"]:hover {
   overflow: hidden;
   background: none !important;
   height: 200px;
+}
+iframe {
+  border: none;
 }
 /* !map end */
 
