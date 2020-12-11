@@ -422,7 +422,7 @@ of the page below move relative to the drop down section */
     width: 60%;
   }
   .show-section {
-    height: 520px;
+    height: 530px;
   }
 }
 @media (min-width: 870px) {
@@ -432,18 +432,19 @@ of the page below move relative to the drop down section */
 }
 @media (min-width: 940px) {
   .show-section {
-    height: 440px;
+    height: 460px;
   }
 }
 @media (min-width: 1050px) {
   .show-section {
-    height: 420px;
+    height: 440px;
   }
 }
 
 .hidden-section h2 {
   text-align: center;
   padding-bottom: 15px;
+  font-size: var(--sub-header-font-size);
 }
 
 .hidden-section div {
@@ -454,6 +455,7 @@ of the page below move relative to the drop down section */
 
 #closeBtn {
   font-size: 1.6rem;
+  color: var(--blue);
 }
 
 /* !main-section-index */
