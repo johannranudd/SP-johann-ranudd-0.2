@@ -8,7 +8,7 @@ This is a school project. The purpose was to make a website for a museum.
 
 ## Link to website
 
-![website](https://epic-nobel-e9b8be.netlify.app/index.html)
+- [website](https://epic-nobel-e9b8be.netlify.app/index.html)
 
 ## Built With
 
