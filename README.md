@@ -10,8 +10,6 @@ This is a school project. The purpose was to make a website for a museum.
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
 - [html](https://html.com/)
 - [css](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [javascript](https://www.javascript.com/)
